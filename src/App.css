@@ -1,0 +1,14 @@
+.container-custom {
+  margin: 5rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.display-box {
+  width: 100%;
+}
+
+.button {
+  margin-top: 1rem;
+}

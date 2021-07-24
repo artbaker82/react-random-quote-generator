@@ -25,14 +25,12 @@ class App extends Component {
     console.log(this.state);
     const { currentQuote } = this.state;
     return (
-      <div className="container vh-100 align-items-center">
-        <div className="row">
-          <div className="col-12">
-            <DisplayQuote quoteToDisplay={currentQuote} />
-          </div>
-          <div className="col mt-2">
-            <GenerateButton handleClick={this.getNewQuote} />
-          </div>
+      <div className="container-custom">
+        <div className="display-box">
+          <DisplayQuote quoteToDisplay={currentQuote} />
+        </div>
+        <div className="button">
+          <GenerateButton handleClick={this.getNewQuote} />
         </div>
       </div>
     );
